@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
+:root {
+    --main-bg-color: coral;
+    --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    --footer-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+
+}
+
+
+html,
+body {
+    /* height: 300px; */
+    /* overflow: scroll; */
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    height: 800px;
+    overflow: scroll;
+    margin-top: 100px;
+    box-sizing: border-box;
+    position: relative;
+    /* background: var(--navbar-background-image); */
+}
+
+/* img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  /* .container {
+    position: relative;
+  } */
+  
+  /* Hide the images by default */
+  /* .mySlides {
+    display: none;
+  } */
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  /* .cursor {
+    cursor: pointer;
+  }
+   */
+  /* Next & previous buttons */
+  /* .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+   */
+  /* Position the "next button" to the right */
+  /* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  
+  /* On hover, add a black background color with a little bit see-through */
+  /* .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  } */
+
+  /* Number text (1/3 etc) */
+/* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* Container for image text */
+  /* .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   */
+  /* Six columns side by side */
+  /* .column {
+    float: left;
+    width: 16.66%;
+  } */
+  
+  /* Add a transparency effect for thumnbail images */
+  /* .demo {
+    opacity: 0.6;
+  }  */
+  
+  /* .active,
+  .demo:hover {
+    opacity: 1;
+  } */
+
+/* ::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+
+.horizontal-scroll-wrapper{
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  width:80px;
+  max-height:500px;
+  margin:0;
+  background:#abc;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-80px);
+  transform-origin:right top;
+}
+.horizontal-scroll-wrapper > div{
+  display:block;
+  padding:5px;
+  background:#cab;
+  transform:rotate(90deg);
+  transform-origin: right top;
+}
+
+.rectangles{
+  top:100px;
+  padding:100px 0 0 0;
+}
+.rectangles > div{
+  width:140px;
+  height:60px;
+  margin:50px 10px;
+  padding:5px;
+  background:#cab;
+  transform:rotate(90deg) translateY(80px);
+  transform-origin: right top;
+}
+
+.row{
+    position: relative;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;box-sizing: border-box;
+    box-sizing: border-box;
+  } */
+  
+  /* Six columns side by side */
+  /* .column {
+    float: left;
+    width: 16.66%;
+  } */
+  
+  /* Add a transparency effect for thumnbail images */
+  /* .demo {
+    opacity: 0.6;
+  }
+  
+  .image-active,
+  .demo:hover {
+    opacity: 1;
+  } */
