@@ -264,7 +264,32 @@ footer{
     color: white;
   }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+
+  /* copyright */
+.bottom-footer{
+	background:var(--navbar-background-image);
+  	color:#fff;
+}
+
+.bottom-footer .container{
+	margin: 0;
+}
+
+.center-copyright {
+	-ms-flex-pack: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	text-align: center;
+  }
+
+  .col-copyright {
+	box-sizing: border-box;
+	-ms-flex: 0 0 auto;
+	-webkit-box-flex: 0;
+	flex: 0 0 auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+  }
 
 @media (max-width: 768px) {
 

@@ -36,9 +36,9 @@ function initMap() {
     '<br>' +
     '<span class="fa fa-clock-o"" aria-hidden="true"> </span> <p>opening hours:</p>' +
     '<br>' +
-    '<p>weekdays: 2-4:30pm</p>'+
+    '<p>weekdays: 2-4:30pm</p>' +
     '<br>' +
-    '<p>weekends: closed</p>'+
+    '<p>weekends: closed</p>' +
     '</div>' +
     '</div>';
 
@@ -64,6 +64,40 @@ function initMap() {
   transitLayer.setMap(map);
 }
 
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider");
+  var dots = document.getElementById("demo");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i]
+      .className
+      .replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+
+}
 
 // var slideIndex = 1;
 // showSlides(slideIndex);

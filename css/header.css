@@ -21,7 +21,7 @@ header * {
     font-size: 18px;
     background-image: var(--navbar-background-image);
     padding: 0 0 0 10px;
-
+    z-index: 10;
     width: 100%;
 
 }
