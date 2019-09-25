@@ -268,10 +268,12 @@ footer{
   /* copyright */
 .bottom-footer{
 	background:var(--navbar-background-image);
-  	color:#fff;
+	  color:#fff;
+	  margin-top:-10px;
 }
 
-.bottom-footer .container{
+
+.footer-container{
 	margin: 0;
 }
 
@@ -289,6 +291,7 @@ footer{
 	flex: 0 0 auto;
 	padding-right: 1rem;
 	padding-left: 1rem;
+	font-size: 10px;
   }
 
 @media (max-width: 768px) {

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
+:root {
+    --main-bg-color: coral;
+    --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    --footer-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    --scroll-bar-image: linear-gradient(260deg, #2376ae 0%, #925a9c 100%);
+
+}
+
+html,
+body {
+    /* height: 300px; */
+    /* overflow: scroll; */
+
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 600px;
+    overflow: scroll;
+    margin-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+    /* background: var(--navbar-background-image); */
+}
