@@ -59,6 +59,7 @@ header * {
     margin-top: 10px;
     margin-left: 20px;
     font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
 }
 
 .main-nav li a:hover {

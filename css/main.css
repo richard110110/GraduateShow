@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 :root {
     --main-bg-color: coral;
     --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -9,6 +11,11 @@
 
 }
 
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
 
 html,
 body {
@@ -69,9 +76,6 @@ body {
   font-weight: bold;
   font-size: 40px;
   border-radius: 0 3px 3px 0;
-  /* user-select: none;
-  -webkit-user-select: none; */
-  /* border-radius: 50%; */
 }
 
 /* Position the "next button" to the right */
@@ -83,7 +87,7 @@ body {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(59, 11, 11, 0.8);
 }
 
 div.scrollmenu {
@@ -109,6 +113,7 @@ text-align: center; */
   /* border: 1px solid #ddd;
     border-radius: 4px; */
   padding: 5px 0;
+  
 }
 
 #demo {
@@ -127,7 +132,6 @@ text-align: center; */
 .slider img{
   width: 100%;
   height: 600px;
-  
 }
 
 .overlay {
@@ -157,6 +161,132 @@ left: 50%;
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
 text-align: center;
+}
+
+
+.card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top:3rem;
+}
+
+.artist-container{
+  /* padding: 10rem 0; */
+  padding-bottom: 20px;
+}
+.artist-container .artist-title{
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-align: center;
+  color:rgb(75, 68, 68);
+  position: relative;
+  margin: 0 -3px 5rem 0;
+}
+.artist-container .card a{
+  text-decoration: none;
+}
+
+.card{
+  width: 35rem;
+  background-color: #c8d1eee5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-right:10px;
+  box-shadow: -7px 10px 5px -4px rgba(17,75,222,1);
+  border:5px inset #2eb9ce;
+
+
+}
+
+.card img{
+  height: 300px;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;
+    /* margin: 10px 0 0 0; */
+    border:5px inset #b625aa8c;
+}
+
+.card h1{
+  font-size: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card .workshop{
+  color: #131010;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.card .degree{
+  color: #131010;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.card .about{
+  font-size: 1rem;
+  color: #131010b7;
+  margin: 1.5rem 0 0 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.card .btn{
+  padding: 1rem 1.5rem;
+  background-color: #2376ae;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  transition: all 0.5s;
+}
+
+.card .btn:hover{
+  transform: translateY(-2px);
+  box-shadow: -7px 10px 5px -4px rgba(0,0,0,0.73);
+  font-size: 1rem;
+}
+
+.card .btn:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.card .social-media{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+  margin: 1.5rem 0 0 0;
+  justify-content: space-evenly;
+  border-top:5px inset #3ac7dd;
+  list-style: none;
+}
+
+.card .social-media i{
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px){
+  .card-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    margin:2rem;
+  }
+  
+
 }
 
 /* img {
