@@ -35,7 +35,7 @@
     font-size: 22px;
     font-weight: 400;
     padding: 10px;
-    background-color: #48b5e9;
+    background:var(--footer-background-image);
     color: white;
     margin: 0;
     border-radius: 2px 2px 0 0;
@@ -264,6 +264,16 @@ footer{
     color: white;
   }
 
+  .footer-distributed .footer-icons .fa-instagram {
+    background: var(--footer-background-image);
+    color: white;
+  }
+
+  .footer-distributed .footer-icons .fa-pinterest {
+	background: #cb2027;
+	color: white;
+  }
+
 
   /* copyright */
 .bottom-footer{
@@ -322,5 +332,7 @@ footer{
 
     .footer-distributed .footer-center i.fa-envelope{
         margin-right:14px;
-    }
+	}
+	
+
 }

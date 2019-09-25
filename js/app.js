@@ -50,7 +50,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: uluru,
     map: map,
-    title: 'Uluru (Ayers Rock)'
+    title: 'ANU graudate show'
   });
   marker.addListener('click', function () {
     infowindow.open(map, marker);
