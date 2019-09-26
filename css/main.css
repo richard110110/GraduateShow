@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 :root {
     --main-bg-color: coral;
     --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -170,12 +173,17 @@ text-align: center;
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-top:3rem;
+  margin:3rem 0 0 0;
+  
+  
 }
 
 .artist-container{
   /* padding: 10rem 0; */
   padding-bottom: 20px;
+  
+  background: var(--navbar-background-image);
+  border-top:10px inset #3ac7dd;
 }
 .artist-container .artist-title{
   text-transform: uppercase;
@@ -185,14 +193,16 @@ text-align: center;
   color:rgb(75, 68, 68);
   position: relative;
   margin: 0 -3px 5rem 0;
+  margin: 20px 0 0 0;
 }
+
 .artist-container .card a{
   text-decoration: none;
 }
 
 .card{
   width: 35rem;
-  background-color: #c8d1eee5;
+  background-color: #edeff5fb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,26 +228,35 @@ text-align: center;
 .card h1{
   font-size: 3rem;
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+
 }
 
 .card .workshop{
   color: #131010;
   font-weight: 100;
   font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
 }
 
 .card .degree{
   color: #131010;
   font-weight: 100;
   font-size: 1.5rem;
+  margin: 40px 0 0 0;
+  text-align: center;
+
 }
 
 .card .about{
   font-size: 1rem;
   color: #131010b7;
   margin: 1.5rem 0 0 0;
-  text-align: center;
-  justify-content: center;
+  text-indent: 30px;
+  font-family: 'Nunito', sans-serif;
+
+
 }
 
 .card .btn{
@@ -272,8 +291,47 @@ text-align: center;
 }
 
 .card .social-media i{
+  text-decoration: none;
+	display: inline-block;
+	width: 60px;
+  height: 60px;
+  
+	cursor: pointer;
+	border-radius: 2px;
   font-size: 3rem;
+	color: #ffffff;
+	text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+	margin-right: 3px;
 }
+
+
+
+.card .fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.card .fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+
+.card .fa-instagram{
+  background: var(--footer-background-image);
+  color: white;
+}
+
+.card .fa:hover{
+  opacity: 0.7;
+  box-shadow: -7px 10px 5px -4px rgba(17,75,222,1);
+
+}
+
+
 
 @media screen and (max-width: 768px){
   .card-wrapper{
@@ -285,10 +343,28 @@ text-align: center;
   .card{
     margin:2rem;
   }
-  
+
 
 }
 
+@media (max-width: 768px) {
+  .card .social-media{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .card .fa-twitter{
+    margin: 10px 0 0 0;
+  }
+
+  .card .fa-instagram{
+    margin: 10px 0 0 0;
+  }
+
+}
 /* img {
     vertical-align: middle;
   }
