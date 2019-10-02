@@ -174,7 +174,7 @@ text-align: center;
   align-content: center;
   justify-content: center;
   margin:3rem 0 0 0;
-  
+  width: 100%;
   
 }
 
@@ -184,6 +184,7 @@ text-align: center;
   
   background: var(--navbar-background-image);
   border-top:10px inset #3ac7dd;
+
 }
 .artist-container .artist-title{
   text-transform: uppercase;

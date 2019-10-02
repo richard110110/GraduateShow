@@ -7,7 +7,21 @@ navBarToggle.addEventListener('click', function () {
 
 
 
+var url = 'https://newsapi.org/v2/everything?' +
+          'q=Artwork&' +
+          'from=2019-09-26&' +
+          'sortBy=popularity&' +
+          'apiKey=9ec9cdd0f4bf4ca1b3e00913ee10f819';
 
+var req = new Request(url);
+
+fetch(req)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(res){
+      console.log(res.articles);
+    })
 
 function initMap() {
   var uluru = {
