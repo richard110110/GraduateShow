@@ -6,22 +6,28 @@ navBarToggle.addEventListener('click', function () {
 });
 
 
+// var title = document.getElementsByTagName("title")[0].innerHTML;
+// document.getElementById("artistName").innerHTML = title;
+// console.log(title);
 
-var url = 'https://newsapi.org/v2/everything?' +
-          'q=Artwork&' +
-          'from=2019-09-26&' +
-          'sortBy=popularity&' +
-          'apiKey=9ec9cdd0f4bf4ca1b3e00913ee10f819';
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
-var req = new Request(url);
+// var url = `https://newsapi.org/v2/everything?` +
+//           `q=Artwork&` +
+//           `from=${date}` +
+//           `sortBy=popularity&` +
+//           `apiKey=9ec9cdd0f4bf4ca1b3e00913ee10f819`;
 
-fetch(req)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(res){
-      console.log(res.articles);
-    })
+// var req = new Request(url);
+
+// fetch(req)
+//     .then(function(response) {
+//       return response.json();
+//     })
+//     .then(function(res){
+//       console.log(res.articles);
+//     })
 
 function initMap() {
   var uluru = {
@@ -77,6 +83,17 @@ function initMap() {
   var transitLayer = new google.maps.TransitLayer();
   transitLayer.setMap(map);
 }
+
+
+var artist_url = "../data/artist.json";
+fetch(artist_url).then(function (res) {
+  return res.json();
+})
+.then(function (data) {
+  console.log(data);
+  
+
+});
 
 
 var slideIndex = 1;
@@ -136,7 +153,12 @@ if(current_width < 768){
   for(var i=0; i<opacityChange.length;i++){
     opacityChange[i].style.opacity=0.8;
   }
+} else{
+  for(var i=0; i<opacityChange.length;i++){
+    opacityChange[i].style.opacity=1;
+  }
 }
+
 
 
 
