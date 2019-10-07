@@ -262,7 +262,7 @@ function listAritst(data){
 window.addEventListener("resize", function(){
   if(this.window.innerWidth < 768){
     this.console.log("go to mobile: " + this.window.innerWidth);
-    this.location.reload();
+    // this.location.reload();
     this.console.log("success");
   }
 })
