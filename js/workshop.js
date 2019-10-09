@@ -101,6 +101,15 @@ function sendOption(){
     return value;
 }
 
+function validateImage(url){
+  if(url == ""){
+    url = "NoImageFound.jpg";
+    return url;
+  } else{
+    return url;
+  }
+
+}
 
 
 fetch(artist_url).then(function (res) {
@@ -161,7 +170,7 @@ for(let elements of iterator){
         
         if(selectedValue === `${data[i].workshop}`){
             console.log("get");
-            newElement.innerHTML = `<img src="../images/thumbnails/${data[i].Thumbnail}" alt="${data[i].First  + ' ' + data[i].Last}" class="artist-thumbail"> ` +
+            newElement.innerHTML = `<img src="../images/thumbnails/${validateImage(data[i].Thumbnail)}" alt="${data[i].First  + ' ' + data[i].Last}" class="artist-thumbail"> ` +
             `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` + 
             `<div class="artist-Degree-Container">`+
             ` <i class="fa fa-university" aria-hidden="true"></i>`+
