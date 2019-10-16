@@ -115,7 +115,7 @@ fetch(artist_url).then(function (res) {
 
     
     newElement.innerHTML = 
-    `<div class= "artist-design"style="display: inline-block; border: 10px solid pink; border-image-source: url(../images/border.png); border-image-slice: 20 22;border-image-repeat: round; width: 300px;height: 200px; background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail).split(' ').join('%20')}); background-size: auto 100%; background-position: center center; background-repeat: no-repeat; margin: 0"></div>`+
+    `<div class= "artist-design"style="display: inline-block;  border-image-source: url(../images/border.png); border-image-slice: 20 22;border-image-repeat: round; width: 300px;height: 200px; background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail).split(' ').join('%20')}); background-size: auto 100%; background-position: center center; background-repeat: no-repeat; margin: 0"></div>`+
     // `<img src="../images/thumbnails/${validateImage(data[i].Thumbnail)}" alt="${data[i].First  + ' ' + data[i].Last}" class="artist-thumbail"> ` +
     // `<div class="artist-thumbail" style="width:300px; height: 200px; background-image:${validateImage(data[i].Thumbnail)} background-size: cover; background-position: center;"></div>`
     `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` + 
