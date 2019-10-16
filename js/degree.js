@@ -170,7 +170,9 @@ for(let elements of iterator){
         
         if(selectedValue === `${data[i].degree}`){
             console.log("get");
-            newElement.innerHTML = `<img src="../images/thumbnails/${validateImage(data[i].Thumbnail)}" alt="${data[i].First  + ' ' + data[i].Last}" class="artist-thumbail"> ` +
+            newElement.innerHTML = 
+            `<div style=" border: 10px solid transparent; border-image: url(../images/artist-images/frame.jpg) 30 round;width:300px;height: 200px; background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail).split(' ').join('%20')});  background-size: auto 100%; background-position: center center; background-repeat: no-repeat;"></div>`+
+
             `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` + 
             `<div class="artist-Degree-Container">`+
             ` <i class="fa fa-university" aria-hidden="true"></i>`+

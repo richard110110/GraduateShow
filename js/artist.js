@@ -10,21 +10,21 @@ navBarToggle.addEventListener('click', function () {
 var today = new Date();
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 
-// var url = `https://newsapi.org/v2/everything?` +
-//           `q=Artwork&` +
-//           `from=${date}` +
-//           `sortBy=popularity&` +
-//           `apiKey=9ec9cdd0f4bf4ca1b3e00913ee10f819`;
+var url = `https://newsapi.org/v2/everything?` +
+          `q=Artwork&` +
+          `from=${date}` +
+          `sortBy=popularity&` +
+          `apiKey=9ec9cdd0f4bf4ca1b3e00913ee10f819`;
 
-// var req = new Request(url);
+var req = new Request(url);
 
-// fetch(req)
-//     .then(function(response) {
-//       return response.json();
-//     })
-//     .then(function(res){
-//       console.log(res.articles);
-//     })
+fetch(req)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(res){
+      console.log(res.articles);
+    })
 
 function initMap() {
   var uluru = {
@@ -88,7 +88,10 @@ function validateImage(url){
   } else{
     return url;
   }
+}
 
+function backgroundImage(background){
+  document.getElementsByClassName("artist-thumbail").style.backgroundImage = background;
 }
 
 
@@ -111,7 +114,10 @@ fetch(artist_url).then(function (res) {
     newElement.setAttribute("id", "each-artist");
 
     
-    newElement.innerHTML = `<img src="../images/thumbnails/${validateImage(data[i].Thumbnail)}" alt="${data[i].First  + ' ' + data[i].Last}" class="artist-thumbail"> ` +
+    newElement.innerHTML = 
+    `<div style=" border: 10px solid transparent; border-image: url(../images/artist-images/frame.jpg) 30 round; width:300px;height: 200px; background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail).split(' ').join('%20')}); background-size: auto 100%; background-position: center center; background-repeat: no-repeat;"></div>`+
+    // `<img src="../images/thumbnails/${validateImage(data[i].Thumbnail)}" alt="${data[i].First  + ' ' + data[i].Last}" class="artist-thumbail"> ` +
+    // `<div class="artist-thumbail" style="width:300px; height: 200px; background-image:${validateImage(data[i].Thumbnail)} background-size: cover; background-position: center;"></div>`
     `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` + 
     `<div class="artist-Degree-Container">`+
     ` <i class="fa fa-university" aria-hidden="true"></i>`+
