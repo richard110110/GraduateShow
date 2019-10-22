@@ -352,7 +352,7 @@ text-align: center;
   color: #131010;
   font-weight: 100;
   font-size: 1.5rem;
-  margin: 40px 0 0 0;
+  /* margin: 40px 0 0 0; */
   text-align: center;
 
 }
@@ -363,6 +363,12 @@ text-align: center;
   margin: 1.5rem 0 0 0;
   text-indent: 30px;
   font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:10px;
+  margin-right:10px;
+  /* justify-content: center; */
 
 
 }
@@ -439,6 +445,53 @@ text-align: center;
 
 }
 
+.artName i{
+  display: inline-flex;
+  font-size:40px;
+  margin-right:10px;
+  color: blue;    
+  /* color: var(--navbar-background-image); */
+
+}
+.artName h1{
+  display: inline-flex;
+}
+
+
+
+.artDegree i{
+  display: inline-flex;
+  font-size:40px;
+  margin-right:10px;
+  color: blue;    
+  /* color: var(--navbar-background-image); */
+
+}
+.artDegree p{
+  display: inline-flex;
+}
+
+@media screen and (max-width: 500px){
+  .artName i{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .artDegree i{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+  }
+
+  .artDegree p{
+    margin-top:10px;
+  }
+
+}
 
 
 @media screen and (max-width: 768px){

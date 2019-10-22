@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+
+
+@import url('https://fonts.googleapis.com/css?family=Jomolhari|Lato&display=swap');
+
 :root {
     --main-bg-color: coral;
     --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -259,9 +263,14 @@ text-align: center;
   font-size: 1rem;
   color: #131010b7;
   margin: 1.5rem 0 0 0;
+  
   text-indent: 30px;
   font-family: 'Nunito', sans-serif;
-
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left:10px;
+  margin-right:10px;
 
 }
 
@@ -396,7 +405,7 @@ text-align: center;
 #artist-list-container{
   display: flex;
   flex-wrap: wrap;
-  background-color: dodgerblue;
+  background-color: #b3cccc;
   min-height:400px;
   max-height: 900px;
   overflow: scroll;
@@ -479,21 +488,69 @@ text-align: center;
 
 .degree-list{
   margin-top:50px;
+  /* padding-top:50px; */
+  /* display: flex; */
+  background-color: #b3cccc;
+
+  /* flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center; */
+
+  flex-direction: column;
   display: flex;
-  flex-wrap: wrap;
-  background-color: dodgerblue;
-  /* overflow: scroll; */
+  /* justify-content: space-between; */
+  align-items: center;
   justify-items: center;
   justify-content: center;
+  height: auto;
+  width: auto;
+
 }
 .selectDegree{
   margin-top:20px;
-  font-size:20px;
+  font-size:24px;
+  font-family: 'Jomolhari', serif;
+
+  /* flex-direction: column; */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+/*display: flex;*/
+
   /* display: inline-flex; */
   /* display: inline-flex; */
 }
 
+#chooseDegree{
+  margin-left:20px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:24px;
+  background-color: dodgerblue;
+}
 
+#sendValue{
+  font-size:24px;
+  background-color: dodgerblue;
+  border-radius: 12px;
+  margin-left: 10px;
+  font-family: 'Lato', sans-serif;
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 768px){
+  .degree-list{
+    padding-top:50px;  
+  }
+
+}
 
 
 @media screen and (max-width: 768px){
@@ -506,12 +563,10 @@ text-align: center;
   .card{
     margin:2rem;
   }
+  .selectDegree{
+  flex-direction: column;
 
-
-
-  
-
-
+  }
 }
 
 @media screen and (max-width: 500px){

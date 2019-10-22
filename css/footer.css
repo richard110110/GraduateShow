@@ -219,6 +219,7 @@ footer{
 
 .footer-distributed .footer-right{
 	width: 20%;
+	margin-top:-15px;
 	
 }
 
@@ -314,6 +315,17 @@ footer{
 	color: white;
   }
 
+  .footer-distributed .footer-icons .social-address span{
+	display: block;
+	color:  #ffffff;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	justify-content: center;
+	align-items: center;
+	margin-top:10px;
+  }
 
   /* copyright */
 .bottom-footer{

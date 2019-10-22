@@ -155,6 +155,32 @@ for(let elements of iterator){
 
   console.log("------------\n"+returnedValue);
 
+
+  for(var i=0; i< data.length;i++){
+    var newElement = document.createElement('div');
+    newElement.setAttribute("id", "each-artist");
+
+  if(document.getElementById('chooseDegree').options[document.getElementById('chooseDegree').selectedIndex].text == `${data[i].workshop}`){
+    console.log("get");
+    newElement.innerHTML = 
+    `<div class= "artist-design"style="display: inline-block; border: 10px solid pink; border-image-source: url(../images/border.png); border-image-slice: 20 22;border-image-repeat: round; width: 300px;height: 200px; background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail).split(' ').join('%20')}); background-size: auto 100%; background-position: center center; background-repeat: no-repeat; margin: 0"></div>`+
+
+    `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` + 
+    `<div class="artist-Degree-Container">`+
+    ` <i class="fa fa-university" aria-hidden="true"></i>`+
+    `<div class="artist-Degree">${data[i].degree}</div>`+
+    '</div>'+
+    `<div class="artist-Workshop">${data[i].workshop}</div>` +
+    `<div class="artist-Social-Container">` +
+    `<div><a href=${data[i].Website}><i class="fa fa-globe" aria-hidden="true"></i></a></div>`+
+    `<div><a href=${data[i].Social}><i class="fa fa-share-square-o" aria-hidden="true"></i></a></div>`+
+    `</div>`;
+    document.getElementById("artist-list-container").appendChild(newElement); 
+  } else  {
+    console.log("this is returnedValue: " + `${data[i].degree}`);
+}
+  }
+
   document.getElementById("sendValue").addEventListener("click", function(){
 
     document.getElementById("artist-list-container").innerHTML = "";
@@ -171,7 +197,7 @@ for(let elements of iterator){
         if(selectedValue === `${data[i].workshop}`){
             console.log("get");
             newElement.innerHTML = 
-            `<div style=" border: 10px solid transparent; border-image: url(../images/artist-images/frame.jpg) 30 round; width:300px;height: 200px; background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail).split(' ').join('%20')}); background-size: auto 100%; background-position: center center; background-repeat: no-repeat;"></div>`+
+            `<div class= "artist-design"style="display: inline-block; border: 10px solid pink; border-image-source: url(../images/border.png); border-image-slice: 20 22;border-image-repeat: round; width: 300px;height: 200px; background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail).split(' ').join('%20')}); background-size: auto 100%; background-position: center center; background-repeat: no-repeat; margin: 0"></div>`+
 
             `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` + 
             `<div class="artist-Degree-Container">`+

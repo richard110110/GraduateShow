@@ -18,3 +18,10 @@ beauty paragraph
 
 header footer color same
 
+1. change border to same #done
+2. make workshop and degree page initialized #done
+3. style dropdown list and button and text #done
+
+
+
+
