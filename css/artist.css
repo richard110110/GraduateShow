@@ -614,6 +614,9 @@ text-align: center;
   .card .fa-twitter{
     margin: 10px 0 0 0;
   }
+  #chooseDegree{
+    font-size:17px;
+  }
 
   .card .fa-instagram{
     margin: 10px 0 0 0;
