@@ -138,30 +138,6 @@ function showSlides(n) {
 
 
 //recursive method to check the width for the lacking hover effect on mobile view;
-window.addEventListener("resize", function(){
-  if(this.window.innerWidth < 768){
-    this.console.log("go to mobile: " + this.window.innerWidth);
-    // this.location.reload();
-    this.console.log("success");
-  }
-})
-
-var current_width = window.innerWidth;
-console.log(current_width);
-
-if(current_width < 768){
-
-  var opacityChange = document.getElementsByClassName("overlay");
-  console.log(opacityChange.length);
-
-  for(var i=0; i<opacityChange.length;i++){
-    opacityChange[i].style.opacity=0.8;
-  }
-} else{
-  for(var i=0; i<opacityChange.length;i++){
-    opacityChange[i].style.opacity=1;
-  }
-}
 
 
 

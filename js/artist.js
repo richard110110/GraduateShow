@@ -81,6 +81,11 @@ function validateImage(url) {
   }
 }
 
+
+function goToBottom(){
+  window.location.href = "#map";
+}
+
 var artist_url = "../data/artist.json";
 
 fetch(artist_url).then(function (res) {
@@ -108,16 +113,3 @@ fetch(artist_url).then(function (res) {
 
   });
 
-// recursive method to check the width for the lacking hover effect on mobile
-// view;
-window.addEventListener("resize", function () {
-  if (this.window.innerWidth < 768) {
-    this
-      .console
-      .log("go to mobile: " + this.window.innerWidth);
-    // this.location.reload();
-    this
-      .console
-      .log("success");
-  }
-})

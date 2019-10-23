@@ -31,6 +31,7 @@ body {
 
     margin: 0;
     padding: 0;
+    background-color: #b3cccc;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -547,6 +548,22 @@ text-align: center;
 
 
 
+}
+
+i.fa-arrow-down{
+  position: sticky;
+  top:50%;
+  /* padding: 50px; */
+  padding: 10px;
+  font-size: 20px;
+  left:0;
+  border: none;
+  color: white;
+  background-color:rgb(42, 23, 214);  
+}
+
+i.fa-arrow-down:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 
