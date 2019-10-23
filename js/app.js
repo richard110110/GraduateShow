@@ -135,6 +135,8 @@ function showSlides(n) {
 
 
 
+
+
 //recursive method to check the width for the lacking hover effect on mobile view;
 window.addEventListener("resize", function(){
   if(this.window.innerWidth < 768){
