@@ -1,812 +1,568 @@
 @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
-
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
-
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Jomolhari|Lato&display=swap');
-
 :root {
     --main-bg-color: coral;
     --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     --footer-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     --scroll-bar-image: linear-gradient(260deg, #2376ae 0%, #925a9c 100%);
-
 }
-
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 html,
 body {
-    /* height: 300px; */
-    /* overflow: scroll; */
-
     margin: 0;
     padding: 0;
     background-color: #b3cccc;
 }
+
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--footer-background-image); 
-  border-radius: 10px;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
 }
 
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: var(--footer-background-image);
+    border-radius: 10px;
+}
+
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--scroll-bar-image); 
+    background: var(--scroll-bar-image);
 }
 
 .container {
-    
     overflow: scroll;
     margin-top: 50px;
     box-sizing: border-box;
     position: relative;
-    /* background: var(--navbar-background-image); */
 }
 
-.scroll-container{
+.scroll-container {
     position: relative;
     margin: 0;
     overflow-x: scroll;
 }
 
-.sliderContent{
-  position: relative;
-  margin-top: 0px;
+.sliderContent {
+    position: relative;
+    margin-top: 0px;
 }
 
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  /* top: 180%; */
-  
-  width: auto;
-  padding: 16px;
-  margin-top: -300px;
-  color: rgb(22, 156, 56);
-  font-weight: bold;
-  font-size: 40px;
-  border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -300px;
+    color: rgb(22, 156, 56);
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
 }
+
 
 /* Position the "next button" to the right */
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
-  background-color: rgba(59, 11, 11, 0.8);
+    background-color: rgba(59, 11, 11, 0.8);
 }
 
 div.scrollmenu {
-  background-color: #333;
-  overflow-x: scroll;
-  white-space: nowrap;
-  bottom: 0;
-  display: inline-flex;
-  height: auto;
-  position: relative;
-  
+    background-color: #333;
+    overflow-x: scroll;
+    white-space: nowrap;
+    bottom: 0;
+    display: inline-flex;
+    height: auto;
+    position: relative;
 }
 
 div.scrollmenu img {
-  display: inline-block;
-  /* color: white;
-text-align: center; */
-  /* padding: 14px; */
-  text-decoration: none;
-  vertical-align: middle;
-  height: 300px;
-  width: 300px;
-  /* border: 1px solid #ddd;
-    border-radius: 4px; */
-  padding: 5px 0;
-  
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    height: 300px;
+    width: 300px;
+    padding: 5px 0;
 }
 
 #demo {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 #demo:hover {
-  opacity: 1;
-  cursor: pointer;
+    opacity: 1;
+    cursor: pointer;
 }
 
-.slider{
-  display: none;
+.slider {
+    display: none;
 }
 
-.slider img{
-  width: 100%;
-  height: 600px;
+.slider img {
+    width: 100%;
+    height: 600px;
 }
 
 .overlay {
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-height: 100%;
-width: 100%;
-opacity: 0;
-transition: .5s ease;
-background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
 }
 
-.overlay:hover{
-opacity: 0.5;
+.overlay:hover {
+    opacity: 0.5;
 }
 
 .text {
-color: white;
-font-size: 20px;
-position: absolute;
-top: 50%;
-left: 50%;
--webkit-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-text-align: center;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-
-.card-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  margin:3rem 0 0 0;
-  width: 100%;
-  
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 3rem 0 0 0;
+    width: 100%;
 }
 
-.artist-container{
-  /* padding: 10rem 0; */
-  padding-bottom: 20px;
-  margin-top:40px;
-  background: var(--navbar-background-image);
-  border-top:10px inset #3ac7dd;
-
-}
-.artist-container .artist-title{
-  text-transform: uppercase;
-  font-size: 4rem;
-  letter-spacing: 3px;
-  text-align: center;
-  color:rgb(75, 68, 68);
-  position: relative;
-  margin: 0 -3px 5rem 0;
-  margin: 20px 0 0 0;
+.artist-container {
+    padding-bottom: 20px;
+    margin-top: 40px;
+    background: var(--navbar-background-image);
+    border-top: 10px inset #3ac7dd;
 }
 
-.artist-container .card a{
-  text-decoration: none;
+.artist-container .artist-title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    text-align: center;
+    color: rgb(75, 68, 68);
+    position: relative;
+    margin: 0 -3px 5rem 0;
+    margin: 20px 0 0 0;
 }
 
-.card{
-  width: 100rem;
-  background-color: #edeff5fb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  margin-right:10px;
-  box-shadow: -7px 10px 5px -4px rgba(17,75,222,1);
-  border:5px inset #2eb9ce;
-  /* box-shadow: inset 0 0 2px hsla(0,0%,0%,.2),
-  0 3px 1px hsla(0,0%,100%,.75),
-  0 -1px 1px 2px hsla(0,0%,0%,.1); */
-
-
+.artist-container .card a {
+    text-decoration: none;
 }
 
-.card img{
+.card {
+    width: 100rem;
+    background-color: #edeff5fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-right: 10px;
+    box-shadow: -7px 10px 5px -4px rgba(17, 75, 222, 1);
+    border: 5px inset #2eb9ce;
+}
+
+.card img {
     height: auto;
     width: 100%;
     display: flex;
     object-fit: cover;
     flex-wrap: wrap;
     /* margin: 10px 0 0 0; */
-    border:5px inset #b625aa8c;
+    border: 5px inset #b625aa8c;
 }
 
-.card h1{
-  font-size: 3rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-
+.card h1 {
+    font-size: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
 }
 
-.card .workshop{
-  color: #131010;
-  font-weight: 100;
-  font-size: 2.5rem;
-  margin: 0;
-  text-align: center;
+.card .workshop {
+    color: #131010;
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
 }
 
-.card .degree{
-  color: #131010;
-  font-weight: 100;
-  font-size: 1.5rem;
-  margin: 40px 0 0 0;
-  text-align: center;
-
+.card .degree {
+    color: #131010;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 40px 0 0 0;
+    text-align: center;
 }
 
-.card .about{
-  font-size: 1rem;
-  color: #131010b7;
-  margin: 1.5rem 0 0 0;
-  
-  text-indent: 30px;
-  font-family: 'Nunito', sans-serif;
-  line-height: 1.6;
-  text-align: justify;
-  text-justify: inter-word;
-  margin-left:10px;
-  margin-right:10px;
-
+.card .about {
+    font-size: 1rem;
+    color: #131010b7;
+    margin: 1.5rem 0 0 0;
+    text-indent: 30px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.card .btn{
-  padding: 1rem 1.5rem;
-  background-color: #2376ae;
-  border-radius: 2rem;
-  margin: 1rem 0;
-  font-size: 0.8rem;
-  transition: all 0.5s;
+.card .btn {
+    padding: 1rem 1.5rem;
+    background-color: #2376ae;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    transition: all 0.5s;
 }
 
-.card .btn:hover{
-  transform: translateY(-2px);
-  box-shadow: -7px 10px 5px -4px rgba(0,0,0,0.73);
-  font-size: 1rem;
+.card .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: -7px 10px 5px -4px rgba(0, 0, 0, 0.73);
+    font-size: 1rem;
 }
 
-.card .btn:active{
-  transform: translateY(0);
-  box-shadow: none;
+.card .btn:active {
+    transform: translateY(0);
+    box-shadow: none;
 }
 
-.card .social-media{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 2rem 0;
-  margin: 1.5rem 0 0 0;
-  justify-content: space-evenly;
-  border-top:5px inset #3ac7dd;
-  list-style: none;
-}
-
-.card .social-media i{
-  text-decoration: none;
-	display: inline-block;
-	width: 60px;
-  height: 60px;
-  
-	cursor: pointer;
-	border-radius: 2px;
-  font-size: 3rem;
-	color: #ffffff;
-	text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-
-	margin-right: 3px;
-}
-
-
-
-.card .fa-facebook{
-  background: #3B5998;
-  color: white;
-}
-
-.card .fa-twitter{
-  background: #55ACEE;
-  color: white;
-}
-
-.card .fa-instagram{
-  background: var(--footer-background-image);
-  color: white;
-}
-
-.card .fa:hover{
-  opacity: 0.7;
-  box-shadow: -7px 10px 5px -4px rgba(17,75,222,1);
-
-}
-
-.artwork-transit{
+.card .social-media {
     width: 100%;
-    height: 40rem;    
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+    margin: 1.5rem 0 0 0;
+    justify-content: space-evenly;
+    border-top: 5px inset #3ac7dd;
+    list-style: none;
+}
+
+.card .social-media i {
+    text-decoration: none;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 3px;
+}
+
+.card .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.card .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.card .fa-instagram {
+    background: var(--footer-background-image);
+    color: white;
+}
+
+.card .fa:hover {
+    opacity: 0.7;
+    box-shadow: -7px 10px 5px -4px rgba(17, 75, 222, 1);
+}
+
+.artwork-transit {
+    width: 100%;
+    height: 40rem;
     margin: auto;
     /* border:5px inset #b625aa8c; */
-  background-image: url(../images/artist-images/Vincent_Namatjira_1.jpg);
-  background-size: 100% 100%;
-  
-  /* backface-visibility: hidden; */
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-  background-position: center center;
-  /* animation: slide 20s infinite;
+    background-image: url(../images/artist-images/Vincent_Namatjira_1.jpg);
+    background-size: 100% 100%;
+    /* backface-visibility: hidden; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    /* animation: slide 20s infinite;
   transform: translateZ(0) scale(1.0,1.0); */
-
 }
 
-@keyframes slide{
-    25%{
-      background: url(../images/artist-images/Vincent_Namatjira_2.jpg);
+@keyframes slide {
+    25% {
+        background: url(../images/artist-images/Vincent_Namatjira_2.jpg);
     }
-    50%{
-      background: url(../images/artist-images/Vincent_Namatjira_3.jpg);
+    50% {
+        background: url(../images/artist-images/Vincent_Namatjira_3.jpg);
     }
-    75%{
-      background: url(../images/artist-images/Vincent_Namatjira_4.jpg);
+    75% {
+        background: url(../images/artist-images/Vincent_Namatjira_4.jpg);
     }
-    100%{
-      background: url(../images/artist-images/Vincent_Namatjira_5.jpg);
+    100% {
+        background: url(../images/artist-images/Vincent_Namatjira_5.jpg);
     }
 }
 
-.artName i{
-  display: inline-flex;
-  font-size:40px;
-  margin-right:10px;
-  color: blue;    
-  /* color: var(--navbar-background-image); */
-
-}
-.artName h1{
-  display: inline-flex;
+.artName i {
+    display: inline-flex;
+    font-size: 40px;
+    margin-right: 10px;
+    color: blue;
 }
 
-.artDegree i{
-  display: inline-flex;
-  font-size:40px;
-  margin-right:10px;
-  color: blue;    
-  /* color: var(--navbar-background-image); */
-
-}
-.artDegree p{
-  display: inline-flex;
+.artName h1 {
+    display: inline-flex;
 }
 
-#artist-list-container{
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #b3cccc;
-  min-height:400px;
-  max-height: 900px;
-  overflow: scroll;
-  justify-items: center;
-  justify-content: center;
+.artDegree i {
+    display: inline-flex;
+    font-size: 40px;
+    margin-right: 10px;
+    color: blue;
 }
 
-#each-artist{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-  max-width: 350px;
-  min-width:320px;
-  text-align: center;
-  /* width:200px; */
-  /* width:100px; */
-  margin: 100px;
-  background: var(--navbar-background-image);
+.artDegree p {
+    display: inline-flex;
 }
 
-.artist-thumbail{
-  width:300px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
+#artist-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b3cccc;
+    min-height: 400px;
+    max-height: 900px;
+    overflow: scroll;
+    justify-items: center;
+    justify-content: center;
 }
 
-.artist-name{
-  font-size:24px;
-  max-width: 320px;
-  min-width:320px;
-
-}
-.artist-Degree{
-  font-size:18px;
-}
-
-.artist-Degree-Container i{
-  display: inline-flex;
-  font-size:20px;
-  margin-right:10px;
-  color: blue; 
+#each-artist {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    min-width: 320px;
+    text-align: center;
+    margin: 100px;
+    background: var(--navbar-background-image);
 }
 
-.artist-Degree-Container .artist-Degree{
-  display: inline-flex;
-
-}
-.artist-Workshop{
-  margin-top:10px;
-  font-size:18px;
+.artist-thumbail {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
-.work-dimension{
-  margin-top:10px;
-  font-size:18px;
+.artist-name {
+    font-size: 24px;
+    max-width: 320px;
+    min-width: 320px;
+}
+
+.artist-Degree {
+    font-size: 18px;
+}
+
+.artist-Degree-Container i {
+    display: inline-flex;
+    font-size: 20px;
+    margin-right: 10px;
+    color: blue;
+}
+
+.artist-Degree-Container .artist-Degree {
+    display: inline-flex;
+}
+
+.artist-Workshop {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.work-dimension {
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .artist-Social-Container {
-  display: inline-flex;
-  font-size:20px;
-  margin-right:10px;
-  color: blue; 
-  justify-items: center;
-  justify-content: center;
-  margin-top:10px;
-
-}
-
-.artist-Social-Container a{
-  text-decoration: none;
-  display: inline-flex;
-  font-size:20px;
-  margin-right:10px;
-  color: blue; 
-
-}
-
-.artist-Social-Container i{
-  display: inline-flex;
-  font-size:20px;
-  margin-right:10px;
-  color: blue; 
-
-}
-
-
-
-.degree-list{
-  margin-top:50px;
-  /* padding-top:50px; */
-  /* display: flex; */
-  background-color: #b3cccc;
-
-  /* flex-wrap: wrap;
-  justify-items: center;
-  justify-content: center; */
-
-  flex-direction: column;
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  height: auto;
-  width: auto;
-
-}
-.selectDegree{
-  margin-top:20px;
-  font-size:24px;
-  font-family: 'Jomolhari', serif;
-
-  /* flex-direction: column; */
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-
-/*display: flex;*/
-
-  /* display: inline-flex; */
-  /* display: inline-flex; */
-}
-
-#chooseDegree{
-  margin-left:20px;
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size:24px;
-  background-color: dodgerblue;
-}
-
-#sendValue{
-  font-size:24px;
-  background-color: dodgerblue;
-  border-radius: 12px;
-  margin-left: 10px;
-  font-family: 'Lato', sans-serif;
-
-
-
-}
-
-i.fa-arrow-down{
-  position: sticky;
-  top:50%;
-  /* padding: 50px; */
-  padding: 10px;
-  font-size: 20px;
-  left:0;
-  border: none;
-  color: white;
-  background-color:rgb(42, 23, 214);  
-}
-
-i.fa-arrow-down:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-
-
-
-@media screen and (min-width: 768px){
-  .degree-list{
-    padding-top:50px;  
-  }
-
-}
-
-
-@media screen and (max-width: 768px){
-  .card-wrapper{
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: inline-flex;
+    font-size: 20px;
+    margin-right: 10px;
+    color: blue;
+    justify-items: center;
     justify-content: center;
-    align-items: center;
-  }
-  .card{
-    margin:2rem;
-  }
-  .selectDegree{
-  flex-direction: column;
-
-  }
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 500px){
-  .artName i{
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.artist-Social-Container a {
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 20px;
+    margin-right: 10px;
+    color: blue;
+}
 
-  .artist-Degree-Container i{
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.artist-Social-Container i {
+    display: inline-flex;
+    font-size: 20px;
+    margin-right: 10px;
+    color: blue;
+}
 
-  .artDegree i{
+.degree-list {
+    margin-top: 50px;
+    background-color: #b3cccc;
     flex-direction: column;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #each-artist{
-    flex-direction: column;
-    display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     justify-items: center;
     justify-content: center;
-    
-  }
-
+    height: auto;
+    width: auto;
 }
-@media (max-width: 768px) {
-  .card .social-media{
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+
+.selectDegree {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Jomolhari', serif;
     display: flex;
     align-items: center;
-  }
-
-  .card .fa-twitter{
-    margin: 10px 0 0 0;
-  }
-  #chooseDegree{
-    font-size:17px;
-  }
-
-  .card .fa-instagram{
-    margin: 10px 0 0 0;
-  }
-  /* .artwork-transit{
-    background-image: url(../images/artist-images/Vincent_Namatjira_1.jpg);
-    margin: 0;
-    background-position: center center;
-  
-    background-size:100%;
-    background-repeat:   no-repeat;
-    background-attachment: fixed;
-
-
-  } */
-
+    justify-items: center;
+    justify-content: center;
 }
-/* img {
-    vertical-align: middle;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  /* .container {
+
+#chooseDegree {
+    margin-left: 20px;
     position: relative;
-  } */
-  
-  /* Hide the images by default */
-  /* .mySlides {
-    display: none;
-  } */
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  /* .cursor {
-    cursor: pointer;
-  }
-   */
-  /* Next & previous buttons */
-  /* .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: dodgerblue;
+}
+
+#sendValue {
+    font-size: 24px;
+    background-color: dodgerblue;
+    border-radius: 12px;
+    margin-left: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+i.fa-arrow-down {
+    position: sticky;
+    top: 50%;
+    padding: 10px;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-   */
-  /* Position the "next button" to the right */
-  /* .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  } */
-  
-  /* On hover, add a black background color with a little bit see-through */
-  /* .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  } */
-
-  /* Number text (1/3 etc) */
-/* .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  } */
-  
-  /* Container for image text */
-  /* .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
+    left: 0;
+    border: none;
     color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-   */
-  /* Six columns side by side */
-  /* .column {
-    float: left;
-    width: 16.66%;
-  } */
-  
-  /* Add a transparency effect for thumnbail images */
-  /* .demo {
-    opacity: 0.6;
-  }  */
-  
-  /* .active,
-  .demo:hover {
-    opacity: 1;
-  } */
-
-/* ::-webkit-scrollbar{width:2px;height:2px;}
-::-webkit-scrollbar-button{width:2px;height:2px;}
-
-
-.horizontal-scroll-wrapper{
-  position:absolute;
-  display:block;
-  top:0;
-  left:0;
-  width:80px;
-  max-height:500px;
-  margin:0;
-  background:#abc;
-  overflow-y:auto;
-  overflow-x:hidden;
-  transform:rotate(-90deg) translateY(-80px);
-  transform-origin:right top;
-}
-.horizontal-scroll-wrapper > div{
-  display:block;
-  padding:5px;
-  background:#cab;
-  transform:rotate(90deg);
-  transform-origin: right top;
+    background-color: rgb(42, 23, 214);
 }
 
-.rectangles{
-  top:100px;
-  padding:100px 0 0 0;
-}
-.rectangles > div{
-  width:140px;
-  height:60px;
-  margin:50px 10px;
-  padding:5px;
-  background:#cab;
-  transform:rotate(90deg) translateY(80px);
-  transform-origin: right top;
+i.fa-arrow-down:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.row{
-    position: relative;
+@media screen and (min-width: 768px) {
+    .degree-list {
+        padding-top: 50px;
+    }
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;box-sizing: border-box;
-    box-sizing: border-box;
-  } */
-  
-  /* Six columns side by side */
-  /* .column {
-    float: left;
-    width: 16.66%;
-  } */
-  
-  /* Add a transparency effect for thumnbail images */
-  /* .demo {
-    opacity: 0.6;
-  }
-  
-  .image-active,
-  .demo:hover {
-    opacity: 1;
-  } */
+
+@media screen and (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin: 2rem;
+    }
+    .selectDegree {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .artName i {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .artist-Degree-Container i {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .artDegree i {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #each-artist {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .card .social-media {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .card .fa-twitter {
+        margin: 10px 0 0 0;
+    }
+    #chooseDegree {
+        font-size: 17px;
+    }
+    .card .fa-instagram {
+        margin: 10px 0 0 0;
+    }
+}
