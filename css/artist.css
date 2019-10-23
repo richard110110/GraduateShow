@@ -226,7 +226,7 @@ text-align: center;
 }
 
 .card img{
-  height: 300px;
+    height: auto;
     width: 100%;
     display: flex;
     object-fit: cover;
