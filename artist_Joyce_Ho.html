@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joyce Ho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/artist.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="images/icon.jpg" type="image/jpg" />
+
+    <!-- <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar" id="stickyBar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fa fa-bars"></i>
+        </span>
+        <a href="#" class="logo">Graduate Show</a>
+        <!-- <div class="title">Graduate Show</div> -->
+
+        <ul class="main-nav" id="menu">
+          <li>
+            <a href="index.html">
+              <i class="fa fa-fw fa-home" aria-hidden="true"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="artist.html">
+              <i class="fa fa-users" aria-hidden="true"></i>
+              Artist</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-university" aria-hidden="true"></i>
+              Degree</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-tasks" aria-hidden="true"></i>
+              Workshop</a
+            >
+          </li>
+          <li>
+            <a href="#map">
+              <i class="fa fa-map" aria-hidden="true"></i>
+              Find us</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+              Artwork news</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="artist-container">
+      <div class="card-wrapper">
+        <div class="card">
+          <img
+            src="images/thumbnails/Joyce_Ho_1.jpg"
+            alt=""
+            class="card-img"
+          />
+
+          <!-- <div class="artwork-transit">
+                         <img src="images/artist-images/Abello_M.jpg" alt="" class="card-img"> 
+                    </div> -->
+          <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+          <div class="artName">
+            <i class="fa fa-user" aria-hidden="true"></i>
+
+            <h1 id="artistName">Joyce Ho</h1>
+          </div>
+          <p class="workshop">Photomedia</p>
+          <div class="artDegree">
+            <i class="fa fa-university" aria-hidden="true"></i>
+
+            <p class="degree">Master of Visual Arts</p>
+          </div>
+          <p class="about">
+            Joyce Ho’s works are unified by their striking aesthetic, which
+            strips back unnecessary elements to foreground uncanny takes on
+            gender roles, bureaucratic control and cultural conventions. This
+            sets up strange spaces of encounter in which her audience has become
+            increasingly central. Her paintings, installations, videos and
+            performance works are notable for their saturated planes of colour —
+            cool yellows and sickly greens — which typically surround neatly
+            groomed young women. The women act as both avatars for the artist
+            herself and enigmatic agents guiding audiences through nonsensical
+            but compelling rituals. Ho’s interest in the tension between dream
+            and reality, and between darkness and light, creates unusual
+            atmospheres and strange situations that are at once uneasy,
+            seductive and playfully humorous.
+          </p>
+          <ul class="social-media">
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="artist-list-container">
+      <!-- <div style="margin-top:100px;   background: var(--navbar-background-image);  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border: 10px solid pink; height: 200px; width: 300px; border-image-source: url(../images/border.png); border-image-slice: 20 22;border-image-repeat: round;">
+            <iframe style=" border-image-source: url(../images/border.png); border-image-slice: 20 22; border-image-repeat: round;" width="300" height="200" frameborder = 0; src="https://player.vimeo.com/video/288041120?autoplay=1" allowfullscreen>
+            </iframe> -->
+    </div>
+
+    <!-- <div class="sliderContent">
+            <div class="slider">
+                <img src="images/thumbnails/Abello_M.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        1
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="images/thumbnails/Alex_Lundy_Wason.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        2
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="images/thumbnails/Alex_S.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        3
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="images/thumbnails/Alexandra_Butler.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        4
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="images/thumbnails/Ashcroft_J.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        5
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider">
+                <img src="images/thumbnails/Ashcroft_J_2.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        6
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider">
+                <img src="images/thumbnails/Ashcroft_J_3.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        7
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider">
+                <img src="images/thumbnails/Baker_Lucy.jpg"/>
+                <div class="overlay" id="opacityRes">
+                    <div class="text">
+                        8
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#8249</a>
+        <a class="next" onclick="plusSlides(1)">&#8250</a>
+        <div class="scroll-container">
+
+            <div class="scrollmenu">
+                <img
+                    id="demo"
+                    src="images/thumbnails/Abello_M.jpg"
+                    onclick="currentSlide(1)"/>
+                <img
+                    id="demo"
+                    src="images/thumbnails/Alex_Lundy_Wason.jpg"
+                    onclick="currentSlide(2)"/>
+                <img id="demo" src="images/thumbnails/Alex_S.jpg" onclick="currentSlide(3)"/>
+                <img
+                    id="demo"
+                    src="images/thumbnails/Alexandra_Butler.jpg"
+                    onclick="currentSlide(4)"/>
+                <img
+                    id="demo"
+                    src="images/thumbnails/Ashcroft_J.jpg"
+                    onclick="currentSlide(5)"/>
+                <img
+                    id="demo"
+                    src="images/thumbnails/Ashcroft_J_2.jpg"
+                    onclick="currentSlide(6)"/>
+                <img
+                    id="demo"
+                    src="images/thumbnails/Ashcroft_J_3.jpg"
+                    onclick="currentSlide(7)"/>
+                <img
+                    id="demo"
+                    src="images/thumbnails/Baker_Lucy.jpg"
+                    onclick="currentSlide(8)"/>
+            </div>
+        </div> -->
+
+    <!-- <div class="container">
+            <div class="card">
+                <img src="images/artist-images/Abello_M.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="images/artist-images/Alex_Lundy_Wason.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="images/artist-images/Alex_S.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="images/artist-images/Alexandra_Butler.jpg" alt="">
+            </div>
+            <div class="card">
+                <img src="images/artist-images/Appleby_C.jpg" alt="">
+            </div>
+
+        </div> -->
+
+    <div class="footer-location-wrapper" id="map"></div>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Graduate Show</h3>
+
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="#">Artist</a>
+          ·
+          <a href="#">Degree</a>
+          ·
+          <a href="#">Workshop</a>
+        </p>
+
+        <p class="footer-course-name">copyright &copy; 2019</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-address">
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span>105 Childers St</span>
+            Acton ACT 2601
+          </p>
+        </div>
+
+        <div class="footer-address">
+          <i class="fa fa-phone"></i>
+          <p>+61 451003138</p>
+        </div>
+
+        <div class="footer-address">
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="#"> <span>u6695264</span>@anu.edu.au</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-website-about">
+          <span>About the website</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-pinterest"></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="bottom-footer">
+          <div class="container">
+            <div class="center-copyright">
+              <div class="col-copyright">
+                <p>Copyright &copy; 2019 | Graduate Show</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+    <div class="bottom-footer">
+      <div class="footer-container">
+        <div class="center-copyright">
+          <div class="col-copyright">
+            <p>Copyright &copy; 2019 | Graduate Show</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/work.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABWQv1QvbcnxOzacDMuGmBBA7N67_zFHo&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

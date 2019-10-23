@@ -434,6 +434,8 @@ text-align: center;
 
 .artist-name{
   font-size:24px;
+  max-width: 320px;
+  min-width:320px;
 
 }
 .artist-Degree{
@@ -452,6 +454,11 @@ text-align: center;
 
 }
 .artist-Workshop{
+  margin-top:10px;
+  font-size:18px;
+}
+
+.work-dimension{
   margin-top:10px;
   font-size:18px;
 }
