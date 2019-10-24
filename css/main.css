@@ -106,102 +106,6 @@ div.scrollmenu img {
     padding: 5px 0;
 }
 
-div.scorllmenu .showImage1 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Abello_M.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-div.scorllmenu .showImage2 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Alex_Lundy_Wason.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-div.scorllmenu .showImage3 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Alex_S.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-div.scorllmenu .showImage4 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Alexandra_Butler.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-div.scorllmenu .showImage5 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Appleby_C.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-div.scorllmenu .showImage6 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Ashcroft_J.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-div.scorllmenu .showImage7 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Ashcroft_J_2.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-div.scorllmenu .showImage8 {
-    text-decoration: none;
-    vertical-align: middle;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-    background-image: url(../images/artist-images/Ashcroft_J_3.jpg);
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
 #demo {
     opacity: 0.6;
 }
@@ -448,6 +352,10 @@ div.scorllmenu .showImage8 {
     }
     .artDegree p {
         margin-top: 10px;
+    }
+    .prev,
+    .next {
+        display: none;
     }
 }
 
