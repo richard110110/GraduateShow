@@ -14,7 +14,7 @@ add top and down button
 
 change the font!
 
-beauty paragraph
+beauty paragraph #done
 
 header footer color same
 

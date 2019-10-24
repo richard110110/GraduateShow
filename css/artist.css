@@ -425,7 +425,6 @@ div.scrollmenu img {
     display: inline-flex;
     font-size: 20px;
     margin-right: 10px;
-    color: blue;
     justify-items: center;
     justify-content: center;
     margin-top: 10px;
@@ -434,16 +433,17 @@ div.scrollmenu img {
 .artist-Social-Container a {
     text-decoration: none;
     display: inline-flex;
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 10px;
-    color: blue;
+    color: white;
+    text-decoration: none;
 }
 
 .artist-Social-Container i {
     display: inline-flex;
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 10px;
-    color: blue;
+    color: rgb(23, 70, 172);
 }
 
 .degree-list {
@@ -486,16 +486,33 @@ div.scrollmenu img {
 
 i.fa-arrow-down {
     position: sticky;
-    top: 50%;
     padding: 10px;
     font-size: 20px;
+    border: none;
+    top: 50%;
+    left: 0;
+    color: white;
+    background-color: rgb(74, 59, 212);
+    opacity: 0.5;
+}
+
+i.fa-arrow-up {
+    position: sticky;
+    padding: 10px;
+    font-size: 20px;
+    top: 50%;
     left: 0;
     border: none;
     color: white;
-    background-color: rgb(42, 23, 214);
+    background-color: rgb(74, 59, 212);
+    opacity: 0.5;
 }
 
 i.fa-arrow-down:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+i.fa-arrow-up:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -517,6 +534,14 @@ i.fa-arrow-down:hover {
     }
     .selectDegree {
         flex-direction: column;
+    }
+    i.fa-arrow-up {
+        font-size: 10px;
+        padding: 5px;
+    }
+    i.fa-arrow-down {
+        font-size: 10px;
+        padding: 5px;
     }
 }
 
@@ -545,6 +570,7 @@ i.fa-arrow-down:hover {
         align-items: center;
         justify-items: center;
         justify-content: center;
+        margin-top: 40px;
     }
 }
 
