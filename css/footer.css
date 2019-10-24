@@ -317,7 +317,6 @@ footer {
     flex: 0 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
-    font-size: 14px;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -363,6 +362,5 @@ footer {
         justify-content: center;
         align-items: center;
         align-content: center;
-        /* margin-left: 50%; */
     }
 }
