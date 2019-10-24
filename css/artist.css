@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Jomolhari|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 :root {
     --main-bg-color: coral;
     --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -217,18 +220,18 @@ div.scrollmenu img {
 
 .card .workshop {
     color: #131010;
-    font-weight: 100;
     font-size: 2.5rem;
     margin: 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card .degree {
     color: #131010;
-    font-weight: 100;
     font-size: 1.5rem;
     margin: 40px 0 0 0;
     text-align: center;
+    font-family: "Jotia W00", sans-serif;
 }
 
 .card .about {
@@ -394,9 +397,11 @@ div.scrollmenu img {
     font-size: 24px;
     max-width: 320px;
     min-width: 320px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .artist-Degree {
+    font-family: "Jotia W00", sans-serif;
     font-size: 18px;
 }
 
@@ -404,21 +409,36 @@ div.scrollmenu img {
     display: inline-flex;
     font-size: 20px;
     margin-right: 10px;
-    color: blue;
+    color: white;
 }
 
 .artist-Degree-Container .artist-Degree {
     display: inline-flex;
 }
 
-.artist-Workshop {
-    margin-top: 10px;
+.work-Date {
+    display: inline-flex;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+}
+
+.artist-Medium {
+    display: inline-flex;
     font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 10px;
+}
+
+.artist-Workshop {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .work-dimension {
     margin-top: 10px;
     font-size: 18px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .artist-Social-Container {
@@ -443,7 +463,7 @@ div.scrollmenu img {
     display: inline-flex;
     font-size: 30px;
     margin-right: 10px;
-    color: rgb(23, 70, 172);
+    color: #ff6600;
 }
 
 .degree-list {
@@ -542,6 +562,10 @@ i.fa-arrow-up:hover {
     i.fa-arrow-down {
         font-size: 10px;
         padding: 5px;
+    }
+    .work-Date {
+        display: inline-flex;
+        flex-direction: row;
     }
 }
 

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 :root {
     --main-bg-color: coral;
     --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
@@ -131,13 +133,15 @@ footer {
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
+    font-family: Roboto, sans-serif;
 }
 
 .footer-distributed .footer-course-name {
     color: #8f9296;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: normal;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -280,13 +284,14 @@ footer {
 .footer-distributed .footer-icons .social-address span {
     display: block;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: bold;
     margin-bottom: 20px;
     margin-left: 10px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -343,7 +348,7 @@ footer {
         margin-right: 14px;
     }
     .footer-distributed h3 {
-        font-size: 10px;
+        font-size: 30px;
     }
     .footer-distributed .footer-icons .social-address span {
         display: none;

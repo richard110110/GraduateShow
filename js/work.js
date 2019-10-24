@@ -36,12 +36,12 @@ fetch(work_url).then(function(res) {
                         `<h1 class="artist-name">${data[i].artist}</h1>` +
                         `<div class="artist-Degree-Container">` +
                         `<i class="fa fa-calendar-o" aria-hidden="true"></i>` +
-                        `<div class="artist-Degree">${data[i].date}</div>` +
+                        `<div class="work-Date">${data[i].date}</div>` +
                         '</div>' +
                         `<div class="work-dimension">${data[i].dimensions}</div>` +
                         `<div class="artist-Degree-Container">` +
                         `<i class="fa fa-medium" aria-hidden="true"></i>` +
-                        `<div class="artist-Degree">${data[i].medium}</div>` +
+                        `<div class="artist-Medium">${data[i].medium}</div>` +
                         '</div>' +
                         ``;
                     document

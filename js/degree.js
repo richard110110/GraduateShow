@@ -172,7 +172,7 @@ fetch(artist_url)
                 margin: 0"></div>` +
                     `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` +
                     `<div class="artist-Degree-Container">` +
-                    `<i class="fa fa-university" aria-hidden="true"></i>` +
+                    `<i class="fa fa-university" aria-hidden="true" style="color:white"></i>` +
                     `<div class="artist-Degree">${data[i].degree}</div>` +
                     '</div>' + `<div class="artist-Workshop">${data[i].workshop}</div>` +
                     `<div class="artist-Social-Container">` +
