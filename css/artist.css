@@ -383,14 +383,18 @@ div.scrollmenu img {
     min-width: 320px;
     text-align: center;
     margin: 100px;
+    background: white;
+}
+
+.artist-image-container {
     background: var(--navbar-background-image);
 }
 
 .artist-image-show {
     display: inline-block;
-    border: 10px solid pink;
+    border: 12px solid;
     border-image-source: url(../images/border.png);
-    border-image-slice: 20 22;
+    border-image-slice: 22 22;
     border-image-repeat: round;
     width: 300px;
     height: 200px;
@@ -402,7 +406,7 @@ div.scrollmenu img {
 
 .artist-video-show {
     display: inline-block;
-    border: 10px solid pink;
+    border: 12px solid;
     border-image-source: url(../images/border.png);
     border-image-slice: 20 22;
     border-image-repeat: round;
@@ -437,7 +441,7 @@ div.scrollmenu img {
     display: inline-flex;
     font-size: 20px;
     margin-right: 10px;
-    color: white;
+    color: black;
 }
 
 .artist-Degree-Container .artist-Degree {
@@ -491,7 +495,7 @@ div.scrollmenu img {
     display: inline-flex;
     font-size: 30px;
     margin-right: 10px;
-    color: white;
+    color: black;
 }
 
 .degree-list {

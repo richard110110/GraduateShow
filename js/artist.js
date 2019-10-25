@@ -101,11 +101,11 @@ fetch(artist_url).then(function(res) {
             var newElement = document.createElement('div');
             newElement.setAttribute("id", "each-artist");
 
-            newElement.innerHTML = `<div class= "artist-image-show"style="
+            newElement.innerHTML = `<div class="artist-image-container"><div class= "artist-image-show"style="
             background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail)
                 .split(' ')
                 .join('%20')})"; 
-                ></div>` +
+                ></div></div>` +
                 `<div class="artist-info">` +
                 `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` +
                 `<div class="artist-Degree-Container">` +
