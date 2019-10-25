@@ -39,14 +39,14 @@ fetch(work_url).then(function(res) {
                         .getElementById("artist-list-container")
                         .appendChild(newElement);
                 } else {
-                    newElement.innerHTML = `<div class="artist-video-show">` +
+                    newElement.innerHTML = `<div class="artist-image-container"><div class="artist-video-show">` +
                         `<iframe  
                     width="300"
                     height="200"
                     frameborder = 0; 
                     src="${data[i].file}" allowfullscreen>` +
                         `</iframe>` +
-                        `</div>` +
+                        `</div></div>` +
                         `<h1 class="artist-name">${data[i].title}</h1>` +
                         `<h1 class="artist-name">${data[i].artist}</h1>` +
                         `<div class="artist-Degree-Container">` +
