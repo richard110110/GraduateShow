@@ -106,6 +106,7 @@ fetch(artist_url).then(function(res) {
                 .split(' ')
                 .join('%20')})"; 
                 ></div>` +
+                `<div class="artist-info">` +
                 `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` +
                 `<div class="artist-Degree-Container">` +
                 `<i class="fa fa-university" aria-hidden="true"></i>` +
@@ -114,6 +115,7 @@ fetch(artist_url).then(function(res) {
                 `<div class="artist-Social-Container">` +
                 `<div><a href=${data[i].Website}><i class="fa fa-globe" aria-hidden="true"></i></a></div>` +
                 `<div><a href=${data[i].Social}><i class="fa fa-instagram" aria-hidden="true"></i></a></div>` +
+                `</div>` +
                 `</div>`;
             document
                 .getElementById("artist-list-container")
