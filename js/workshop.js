@@ -207,20 +207,11 @@ fetch(artist_url)
 
                     if (selectedValue === `${data[i].workshop}`) {
                         console.log("get");
-                        newElement.innerHTML = `<div class= "artist-design"style="display: inline-block; 
-                        border: 10px solid pink; 
-                        border-image-source: url(../images/border.png); 
-                        border-image-slice: 20 22;
-                        border-image-repeat: round; 
-                        width: 300px;
-                        height: 200px; 
+                        newElement.innerHTML = `<div class= "artist-image-show"style="
                         background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail)
                             .split(' ')
                             .join('%20')}); 
-                            background-size: auto 100%; 
-                            background-position: center center; 
-                            background-repeat: no-repeat; 
-                            margin: 0"></div>` +
+                            "></div>` +
                             `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` +
                             `<div class="artist-Degree-Container">` +
                             ` <i class="fa fa-university" aria-hidden="true"></i>` +
