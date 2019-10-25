@@ -214,7 +214,7 @@ fetch(artist_url)
                             '</div>' + `<div class="artist-Workshop">${data[i].workshop}</div>` +
                             `<div class="artist-Social-Container">` +
                             `<div><a href=${data[i].Website}><i class="fa fa-globe" aria-hidden="true"></i></a></div>` +
-                            `<div><a href=${data[i].Social}><i class="fa fa-share-square-o" aria-hidden="true"></i></a></div>` +
+                            `<div><a href=${data[i].Social}><i class="fa fa-instagram" aria-hidden="true"></i></a></div>` +
                             `</div>`;
                         document
                             .getElementById("artist-list-container")
