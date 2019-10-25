@@ -48,6 +48,7 @@
 .iw-container p {
     display: inline-flex;
     margin-left: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .iw-container a {
@@ -111,7 +112,7 @@ footer {
 
 /* The company logo */
 
-.footer-distributed h3 {
+.footer-distributed .footer-left h3 {
     margin-top: -10px;
     font-family: 'Pacifico', cursive;
     font-size: 25px;
@@ -215,31 +216,44 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer-right h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+.footer-right .deploy {
+    color: white;
+    font-size: 1rem;
+}
+
 .footer-distributed .footer-icons {
     margin-top: 25px;
 }
 
 .footer-distributed .footer-icons a {
     text-decoration: none;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    line-height: 35px;
+    justify-content: center;
+    line-height: 50px;
     margin-right: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .footer-distributed .footer-icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .social-address {
     display: inline-flex;
+    margin-right: 20px;
 }
 
 .footer-distributed .footer-right .footer-icons .fa:hover {
@@ -320,7 +334,7 @@ footer {
     font-family: 'PT Sans', sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 935px) {
     .footer-distributed {
         font: bold 14px sans-serif;
         width: 100%;
@@ -333,6 +347,10 @@ footer {
         width: 100%;
         margin-bottom: 40px;
         text-align: center;
+    }
+    .footer-distributed .footer-icons {
+        display: flex;
+        flex-direction: column;
     }
     .footer-distributed .footer-right .footer-icons {
         text-align: center;
@@ -362,5 +380,21 @@ footer {
         justify-content: center;
         align-items: center;
         align-content: center;
+    }
+}
+
+@media (max-width: 1015px) {
+    .footer-distributed .footer-icons a {
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-color: #33383b;
+        border-radius: 2px;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        line-height: 40px;
+        margin-right: 3px;
     }
 }
