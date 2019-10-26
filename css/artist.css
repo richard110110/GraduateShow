@@ -388,6 +388,7 @@ div.scrollmenu img {
 
 .artist-image-container {
     background: var(--navbar-background-image);
+    height: 220px;
 }
 
 .artist-image-show {
