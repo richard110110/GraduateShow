@@ -315,7 +315,8 @@ footer {
 .bottom-footer {
     background: var(--navbar-background-image);
     color: #fff;
-    margin-top: -15px;
+    margin-top: -16px;
+    height: 25px;
 }
 
 .footer-container {
