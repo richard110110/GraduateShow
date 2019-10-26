@@ -602,7 +602,7 @@ i.fa-arrow-up:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .artName i {
         flex-direction: column;
         display: flex;
@@ -621,13 +621,21 @@ i.fa-arrow-up:hover {
         justify-content: space-between;
         align-items: center;
     }
-    #each-artist {
+    #each-artist:nth-child(1) {
         flex-direction: column;
         display: flex;
         align-items: center;
         justify-items: center;
         justify-content: center;
         margin-top: 40px;
+    }
+    #each-artist:nth-child(n+2) {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        margin-top: 20px;
     }
 }
 
