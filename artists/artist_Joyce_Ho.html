@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!--list the artist Joyce Ho information and artwork-->
 
 <head>
+    <!--the title is the keyword in work.js for listing the artist's artwork-->
     <title>Joyce Ho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -15,12 +17,13 @@
 
 <body>
     <header>
-        <nav class="navbar" id="stickyBar">
+        <nav class="navbar">
             <span class="navbar-toggle" id="js-navbar-toggle">
-                    <i class="fa fa-bars"></i>
-                </span>
+                <i class="fa fa-bars"></i>
+            </span>
             <a href="#" class="logo">Graduate Show</a>
 
+            <!--navigation bar-->
             <ul class="main-nav" id="menu">
                 <li>
                     <a href="../index.html">
@@ -45,17 +48,15 @@
                     <a href="#map">
                         <i class="fa fa-map" aria-hidden="true"></i> Find us</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-newspaper-o" aria-hidden="true"></i> Artwork news</a>
-                </li>
             </ul>
         </nav>
     </header>
+
+    <!--artist container that list artist's information in card style-->
     <div class="artist-container">
         <div class="card-wrapper">
             <div class="card">
-                <img src="../images/thumbnails/Joyce_Ho_1.jpg" alt="" class="card-img" />
+                <img src="../images/thumbnails/Joyce_Ho_1.jpg" alt="Joyce_Ho_1" class="card-img" />
 
                 <div class="artName">
                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -76,17 +77,12 @@
                 </p>
                 <ul class="social-media">
                     <li>
-                        <a href="#">
-                            <i class="fa fa-facebook"></i>
+                        <a href="https://joycehostudio.com">
+                            <i class="fa fa-globe"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/Joyce_Ho">
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
@@ -95,10 +91,13 @@
         </div>
     </div>
 
+    <!--artist-list-container that list the artist's artwork that is generated from work.js-->
     <div id="artist-list-container"></div>
 
+    <!--show the google map that describes ANU design & art building-->
     <div class="footer-location-wrapper" id="map"></div>
 
+    <!--footer distribution-->
     <footer class="footer-distributed">
         <div class="footer-left">
             <h3>Graduate Show</h3>
@@ -110,15 +109,14 @@
                 <a href="../workshop.html">Workshop</a>
             </p>
 
-            <p class="footer-course-name">copyright &copy; 2019</p>
+            <p class="footer-copyright">copyright &copy; 2019</p>
         </div>
 
         <div class="footer-center">
             <div class="footer-address">
                 <i class="fa fa-map-marker"></i>
                 <p>
-                    <span>105 Childers St</span> Acton ACT 2601
-                </p>
+                    <span>105 Childers St</span> Acton ACT 2601</p>
             </div>
 
             <div class="footer-address">
@@ -129,8 +127,7 @@
             <div class="footer-address">
                 <i class="fa fa-envelope"></i>
                 <p>
-                    <span>u6695264</span>@anu.edu.au
-                </p>
+                    <span>u6695264</span>@anu.edu.au</p>
             </div>
         </div>
 
@@ -154,6 +151,7 @@
         </div>
     </footer>
 
+    <!--bottom copyright information-->
     <div class="bottom-footer">
         <div class="footer-container">
             <div class="center-copyright">
@@ -164,7 +162,8 @@
         </div>
     </div>
 
-    <script src="../js/app.js"></script>
+    <!--external javascript files && google map API-->
+
     <script src="../js/work.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABWQv1QvbcnxOzacDMuGmBBA7N67_zFHo&callback=initMap" async defer></script>

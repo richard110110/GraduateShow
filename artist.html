@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!--list the all artits from artist.js-->
 
 <head>
     <title>ANUGraduateShow</title>
@@ -15,7 +16,9 @@
 
 <body>
     <header>
-        <nav class="navbar" id="stickyBar">
+        <!--navigation bar-->
+
+        <nav class="navbar">
             <span class="navbar-toggle" id="js-navbar-toggle">
                     <i class="fa fa-bars"></i>
                 </span>
@@ -28,7 +31,8 @@
                 </li>
                 <li>
                     <a href="artist.html">
-                        <i class="fa fa-users" aria-hidden="true"></i> <u>Artist</u>
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <u>Artist</u>
                     </a>
                 </li>
                 <li>
@@ -45,22 +49,23 @@
                     <a href="#map">
                         <i class="fa fa-map" aria-hidden="true"></i> Find us</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-newspaper-o" aria-hidden="true"></i> Artwork news</a>
-                </li>
             </ul>
         </nav>
     </header>
 
-
+    <!--up && down button to go to first child of each-artist and last child of each artist-->
     <i class="fa fa-arrow-up" aria-hidden="true" onclick="goToTop()"></i>
     <i class="fa fa-arrow-down" aria-hidden="true" onclick="goToBottom()"></i>
 
+    <!--artist-list-container that list all the artists from artist.js-->
 
     <div id="artist-list-container"></div>
 
+    <!--show the google map that describes ANU design & art building-->
+
     <div class="footer-location-wrapper" id="map"></div>
+
+    <!--footer distribution-->
 
     <footer class="footer-distributed">
         <div class="footer-left">
@@ -73,7 +78,7 @@
                 <a href="workshop.html">Workshop</a>
             </p>
 
-            <p class="footer-course-name">copyright &copy; 2019</p>
+            <p class="footer-copyright">copyright &copy; 2019</p>
         </div>
 
         <div class="footer-center">
@@ -116,6 +121,8 @@
         </div>
     </footer>
 
+    <!--bottom copyright information-->
+
     <div class="bottom-footer">
         <div class="footer-container">
             <div class="center-copyright">
@@ -125,6 +132,8 @@
             </div>
         </div>
     </div>
+
+    <!--external javascript files && google map API-->
 
     <script src="js/artist.js"></script>
 

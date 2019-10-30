@@ -1,3 +1,9 @@
+/*--CHENXI GUO u6695264--*/
+
+/*for artist.html functional */
+
+/*make the navigation bar ollapsible*/
+
 let mainNav = document.getElementById('menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
@@ -7,20 +13,7 @@ navBarToggle.addEventListener('click', function() {
         .toggle('active');
 });
 
-var today = new Date();
-var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-
-var url = `https://newsapi.org/v2/everything?` + `q=Artwork&` + `from=${date}` + `sortBy=popularity&` + `apiKey=9ec9cdd0f4bf4ca1b3e00913ee10f819`;
-
-var req = new Request(url);
-
-fetch(req).then(function(response) {
-        return response.json();
-    })
-    .then(function(res) {
-        console.log(res.articles);
-    })
-
+/*set the ANU school of Art Design coordinate to the marker on the google map and style the marker that includes the building's information*/
 function initMap() {
     var uluru = {
         lat: -35.280591,
@@ -45,15 +38,22 @@ function initMap() {
 
     var infowindow = new google
         .maps
-        .InfoWindow({ content: contentString });
+        .InfoWindow({
+            content: contentString
+        });
 
     var marker = new google
         .maps
-        .Marker({ position: uluru, map: map, title: 'ANU graudate show' });
+        .Marker({
+            position: uluru,
+            map: map,
+            title: 'ANU graudate show'
+        });
     marker.addListener('click', function() {
         infowindow.open(map, marker);
     });
     infowindow.open(map, marker);
+    /*show the traffic and transit situation around the location*/
 
     var trafficLayer = new google
         .maps
@@ -66,6 +66,7 @@ function initMap() {
     transitLayer.setMap(map);
 }
 
+/*In the artist json, some artist does not have a Thumbnail, if not have a thumbnail, return a NoImageFound file, if have, return the url image file */
 function validateImage(url) {
     if (url == "") {
         url = "NoImageFound.jpg";
@@ -75,15 +76,21 @@ function validateImage(url) {
     }
 }
 
+/*up arrow button to the first child of each-artist */
 function goToTop() {
-    var location = document.getElementById("artist-list-container").firstElementChild.id;
+    var location = document
+        .getElementById("artist-list-container")
+        .firstElementChild
+        .id;
     window.location.href = `#${location}`;
 }
 
+/*down arrow button to the last child of each-artist */
 function goToBottom() {
     window.location.href = "#map";
 }
 
+/*artist json file is converted by the artist table in Artists and works listing (https://docs.google.com/spreadsheets/d/1n5SCUPYphbVtW1UQWtKaAd4VuKGz8NhboSQE_DdettA/edit#gid=18231182) */
 var artist_url = "../data/artist.json";
 
 fetch(artist_url).then(function(res) {
@@ -96,11 +103,12 @@ fetch(artist_url).then(function(res) {
         var i;
 
         for (i = 0; i < data.length; i++) {
-            console.log("test");
 
+            /*initialize the container for each artist */
             var newElement = document.createElement('div');
             newElement.setAttribute("id", "each-artist");
 
+            /*set the artist's thumbnauk, first,last name, degree, workshop, website and Social form the json file */
             newElement.innerHTML = `<div class="artist-image-container"><div class= "artist-image-show"style="
             background-image: url(../images/thumbnails/${validateImage(data[i].Thumbnail)
                 .split(' ')
@@ -108,15 +116,17 @@ fetch(artist_url).then(function(res) {
                 ></div></div>` +
                 `<div class="artist-info">` +
                 `<h1 class="artist-name">${data[i].First + ' ' + data[i].Last} </h1>` +
-                `<div class="artist-Degree-Container">` +
-                `<i class="fa fa-university" aria-hidden="true"></i>` +
+                `<div class="artist-Degree-Container">` + `<i class="fa fa-university" aria-hidden="true"></i>` +
                 `<div class="artist-Degree">${data[i].degree}</div>` +
-                '</div>' + `<div class="artist-Workshop">${data[i].workshop}</div>` +
+                '</div>' +
+                `<div class="artist-Workshop">${data[i].workshop}</div>` +
                 `<div class="artist-Social-Container">` +
                 `<div><a href=${data[i].Website}><i class="fa fa-globe" aria-hidden="true"></i></a></div>` +
                 `<div><a href=${data[i].Social}><i class="fa fa-instagram" aria-hidden="true"></i></a></div>` +
                 `</div>` +
                 `</div>`;
+
+            /*added all the each-artist elements to artist-list-container */
             document
                 .getElementById("artist-list-container")
                 .appendChild(newElement);

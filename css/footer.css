@@ -1,12 +1,21 @@
+/*--CHENXI GUO u6695264--*/
+
+
+/*--css style for each page's footer--*/
+
+
+/*import google fonts*/
+
 @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-:root {
-    --main-bg-color: coral;
-    --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-    --footer-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+
+/*--Google map container--*/
+
+#map {
+    height: 300px;
 }
 
 .footer-location-wrapper {
@@ -22,9 +31,8 @@
     height: 100%;
 }
 
-#map {
-    height: 300px;
-}
+
+/*--information window on the Google map marker--*/
 
 .iw-container {
     margin-bottom: 10px;
@@ -35,7 +43,7 @@
     font-size: 22px;
     font-weight: 400;
     padding: 10px;
-    background: var(--footer-background-image);
+    background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     color: white;
     margin: 0;
     border-radius: 2px 2px 0 0;
@@ -77,6 +85,9 @@
     padding: 5px 0;
 }
 
+
+/*--footer container--*/
+
 footer {
     position: relative;
     bottom: 0;
@@ -103,14 +114,14 @@ footer {
 }
 
 
-/* Footer left */
+/*--footer left--*/
 
 .footer-distributed .footer-left {
     width: 40%;
 }
 
 
-/* The company logo */
+/*--The logo--*/
 
 .footer-distributed .footer-left h3 {
     margin-top: -10px;
@@ -121,7 +132,7 @@ footer {
 }
 
 
-/* Footer links */
+/*--Footer links--*/
 
 .footer-distributed .footer-links {
     color: #ffffff;
@@ -138,7 +149,10 @@ footer {
     font-size: 20px;
 }
 
-.footer-distributed .footer-course-name {
+
+/*--footer left copyright--*/
+
+.footer-distributed .footer-copyright {
     color: #8f9296;
     font-size: 15px;
     font-weight: normal;
@@ -147,7 +161,7 @@ footer {
 }
 
 
-/* Footer Center */
+/*--footer Center--*/
 
 .footer-distributed .footer-center {
     width: 35%;
@@ -186,7 +200,6 @@ footer {
 .footer-distributed .footer-center p a {
     color: #5383d3;
     text-decoration: none;
-    ;
 }
 
 .footer-distributed .footer-center .footer-address {
@@ -227,6 +240,9 @@ footer {
     color: white;
     font-size: 1rem;
 }
+
+
+/*--footer social links (font awesome)--*/
 
 .footer-distributed .footer-icons {
     margin-top: 25px;
@@ -271,23 +287,8 @@ footer {
     color: white;
 }
 
-.footer-distributed .footer-icons .fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.footer-distributed .footer-icons .fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.footer-distributed .footer-icons .fa-github {
-    background: rgb(17, 18, 20);
-    color: white;
-}
-
 .footer-distributed .footer-icons .fa-instagram {
-    background: var(--footer-background-image);
+    background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     color: white;
 }
 
@@ -310,10 +311,10 @@ footer {
 }
 
 
-/* copyright */
+/*--bottom footer copyright--*/
 
 .bottom-footer {
-    background: var(--navbar-background-image);
+    background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     color: #fff;
     margin-top: -16px;
     height: 25px;
@@ -335,6 +336,9 @@ footer {
     padding-left: 1rem;
     font-family: 'PT Sans', sans-serif;
 }
+
+
+/*--responsive setting for footer--*/
 
 @media (max-width: 935px) {
     .footer-distributed {
@@ -364,7 +368,7 @@ footer {
         margin-right: 11px;
     }
     .footer-distributed .footer-center i.fa-envelope {
-        margin-right: 14px;
+        margin-right: 22px;
     }
     .footer-distributed h3 {
         font-size: 30px;
@@ -384,6 +388,9 @@ footer {
         align-content: center;
     }
 }
+
+
+/*--right footer social links responsive setting--*/
 
 @media (max-width: 1015px) {
     .footer-distributed .footer-icons a {

@@ -1,11 +1,16 @@
+/*--CHENXI GUO u6695264--*/
+
+
+/*--css style for each page's header--*/
+
+
+/*--import google fonts--*/
+
 @import url('https://fonts.googleapis.com/css?family=Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-:root {
-    --main-bg-color: coral;
-    --navbar-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-    --footer-background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-}
+
+/*--header style--*/
 
 header * {
     margin: 0;
@@ -13,20 +18,29 @@ header * {
     box-sizing: border-box;
 }
 
+
+/*--navigation container--*/
+
 .navbar {
     position: fixed;
     top: 0;
     font-size: 18px;
-    background-image: var(--navbar-background-image);
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
     padding: 0 0 0 10px;
     z-index: 10;
     width: 100%;
 }
 
+
+/*--main navigation --*/
+
 .main-nav {
     list-style-type: none;
     display: none;
 }
+
+
+/*--font awesome and text setting in navigation--*/
 
 .main-nav li {
     text-align: center;
@@ -48,6 +62,9 @@ header * {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/*--top left logo setting in navigation--*/
+
 .logo {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
@@ -60,7 +77,6 @@ header * {
 }
 
 .main-nav li a:hover {
-    color: linear-gradient(90deg, rgba(36, 32, 0, 1) 0%, rgba(9, 45, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     text-decoration: underline;
 }
 
@@ -76,6 +92,9 @@ header * {
 .active {
     display: block;
 }
+
+
+/*--mobile layout setting for navigation bar--*/
 
 @media screen and (min-width: 768px) {
     .navbar {
@@ -100,14 +119,4 @@ header * {
     .navbar-toggle {
         display: none;
     }
-    .logo:hover,
-    .main-nav li a:hover {
-        color: linear-gradient(90deg, rgba(36, 32, 0, 1) 0%, rgba(9, 45, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    }
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
