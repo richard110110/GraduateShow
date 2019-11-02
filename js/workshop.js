@@ -153,7 +153,7 @@ fetch(artist_url)
                     .getElementById("artist-list-container")
                     .appendChild(newElement);
             } else {
-                console.log("this is returnedValue: " + `${data[i].degree}`);
+
             }
         }
         /*when the option value has been changed, loaded the each-artist card referred from the selected value in the option tag in workshop select box */
@@ -179,7 +179,7 @@ fetch(artist_url)
                             .selectedIndex
                         ]
                         .text;
-                    console.log(selectedValue);
+
                     /*once the click button is clicked, send the selected option value and display the each-artist card referred from the selected option value in workshop select box*/
                     if (selectedValue === `${data[i].workshop}`) {
                         /*some Thumbnail file name has space that caused javascript cannot parese them, using split and join function to parse those files */
@@ -203,7 +203,7 @@ fetch(artist_url)
                             .appendChild(newElement);
 
                     } else {
-                        console.log("this is returnedValue: " + `${data[i].degree}`);
+
                     }
 
                 }

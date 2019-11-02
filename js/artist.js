@@ -97,8 +97,6 @@ fetch(artist_url).then(function(res) {
         return res.json();
     })
     .then(function(data) {
-        console.log(data);
-        console.log(data.length);
 
         var i;
 

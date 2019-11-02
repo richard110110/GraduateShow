@@ -67,12 +67,10 @@ fetch(work_url).then(function(res) {
         return res.json();
     })
     .then(function(data) {
-        console.log(data);
 
         var i;
         /*set the title as the keyword for listing artist*/
         var keyName = document.title;
-        console.log(keyName);
 
         for (i = 0; i < data.length; i++) {
             if (keyName == `${data[i].artist}`) {

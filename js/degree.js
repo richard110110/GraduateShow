@@ -96,9 +96,6 @@ fetch(artist_url)
     })
     .then(function(data) {
 
-        console.log(data);
-        console.log(data.length);
-
         var options;
 
         var i;
@@ -155,9 +152,7 @@ fetch(artist_url)
                 document
                     .getElementById("artist-list-container")
                     .appendChild(newElement);
-            } else {
-                console.log("this is returnedValue: " + `${data[i].degree}`);
-            }
+            } else {}
         }
 
         /*when the option value has been changed, loaded the each-artist card referred from the selected value in the option tag in degree select box */
